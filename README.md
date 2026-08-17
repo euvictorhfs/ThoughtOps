@@ -30,8 +30,8 @@ O LearningOps, e somente ele, conduz estudo deliberado, currículo, domínio obs
 
 ## Repositórios
 
-- **ThoughtOps Core**: regras reutilizáveis e agnósticas, sem dados pessoais.
-- **ThoughtOps Workspace**: contexto privado de trabalho e registros aprovados.
+- **ThoughtOps Core canônico (público)**: `euvictorhfs/ThoughtOps` — regras reutilizáveis e agnósticas, sem dados pessoais.
+- **ThoughtOps Workspace (privado)**: `euvictorhfs/ThoughtOps-workspace` — contexto privado de trabalho e registros aprovados.
 
 O Workspace no GitHub é a fonte de verdade portátil. Um clone local é opcional, não obrigatório. O ChatGPT só lê ou grava o GitHub quando a integração está disponível e a ação é autorizada; um link de repositório, sozinho, não cria sincronização automática.
 
