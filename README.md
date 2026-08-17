@@ -1,66 +1,45 @@
 # ThoughtOps
 
-**Um sistema operacional para pensamento técnico, comunicação profissional, repertório, metacognição e colaboração humano–IA.**
+**Sistema operacional para pensamento técnico aplicado, comunicação profissional e colaboração humano–IA no trabalho cotidiano.**
 
-O ThoughtOps ajuda você a produzir um trabalho melhor hoje e a desenvolver capacidades que continuam sendo suas amanhã. Ele organiza como você pede, analisa, decide, comunica, aprende e registra conhecimento com apoio de IA.
+O ThoughtOps ajuda a transformar contexto, dados e raciocínio em entregas profissionais melhores: e-mails sobre dados analíticos, descrições de atividades no Jira, documentos de sprint, retrospectivas, decisões e outros artefatos habituais.
 
-> A pessoa decide. A IA apoia. O repositório preserva a verdade.
+> A pessoa decide. A IA apoia. O GitHub preserva a verdade aprovada.
 
-## Comece em 10 minutos
-
-Você não precisa saber programar.
+## Comece de forma simples
 
 1. Crie ou abra um Projeto no ChatGPT chamado **ThoughtOps**.
-2. Em **Configurações do projeto**, prefira **memória somente do projeto** para separar este contexto das outras conversas.
-3. Copie o conteúdo de [runtime/CHATGPT_PROJECT_INSTRUCTIONS.md](runtime/CHATGPT_PROJECT_INSTRUCTIONS.md) para as instruções do projeto.
-4. Adicione [runtime/THOUGHTOPS_CORE.md](runtime/THOUGHTOPS_CORE.md) como fonte ou arquivo do projeto.
-5. Se você tiver um Workspace pessoal, adicione também o arquivo de runtime gerado por ele. Não publique esse arquivo.
-6. Abra um novo chat dentro do projeto e cole o briefing de [templates/SESSION-BRIEF.md](templates/SESSION-BRIEF.md).
-7. Diga o resultado que deseja. Se não escolher um modo, o sistema usa **Production**.
+2. Conecte o GitHub, quando disponível, e permita acesso ao Core e ao Workspace.
+3. Nas instruções do projeto, use [runtime/CHATGPT_PROJECT_INSTRUCTIONS.md](runtime/CHATGPT_PROJECT_INSTRUCTIONS.md).
+4. Crie um único chat chamado **Daily**.
+5. Comece com uma tarefa real: “Preciso redigir um e-mail sobre estes dados…”.
 
-O guia detalhado está em [docs/onboarding/CHATGPT.md](docs/onboarding/CHATGPT.md).
+Você não precisa escolher modos, agentes ou templates. O sistema decide internamente o fluxo mínimo necessário. Veja [docs/onboarding/CHATGPT.md](docs/onboarding/CHATGPT.md).
 
-## Como organizar os chats
+## Responsabilidades
 
-Use um chat por resultado ou linha de trabalho:
+O ThoughtOps:
 
-- **PROD — assunto — data**: criar, decidir, analisar ou comunicar.
-- **EVOL — habilidade — data**: receber feedback e praticar.
-- **REVIEW — período**: revisar evolução com evidências.
-- **SYSTEM — tema**: alterar regras, memória ou arquitetura.
+- produz e revisa artefatos profissionais;
+- melhora clareza, precisão, argumentação, inglês técnico e adaptação cultural;
+- oferece feedback situacional sobre o artefato atual;
+- registra contexto de trabalho, preferências e decisões aprovadas;
+- pode propor evidências de trabalho ao LearningOps.
 
-Não crie um chat separado para cada papel. Os papéis são lentes internas coordenadas pelo sistema.
+O LearningOps, e somente ele, conduz estudo deliberado, currículo, domínio observado, PDI e análise longitudinal do desenvolvimento. A fronteira está em [docs/BOUNDARY-WITH-LEARNINGOPS.md](docs/BOUNDARY-WITH-LEARNINGOPS.md).
 
-## Dois modos
+## Repositórios
 
-- **Production** entrega o melhor resultado adequado à tarefa.
-- **Evolution** transforma evidências do trabalho em feedback, prática e aprendizado.
+- **ThoughtOps Core**: regras reutilizáveis e agnósticas, sem dados pessoais.
+- **ThoughtOps Workspace**: contexto privado de trabalho e registros aprovados.
 
-Você pode pedir os dois: primeiro o resultado, depois uma camada opcional de evolução.
+O Workspace no GitHub é a fonte de verdade portátil. Um clone local é opcional, não obrigatório. O ChatGPT só lê ou grava o GitHub quando a integração está disponível e a ação é autorizada; um link de repositório, sozinho, não cria sincronização automática.
 
-## Dois repositórios
+## Governança simples
 
-- **ThoughtOps-core**: framework público, sem dados pessoais.
-- **ThoughtOps-workspace**: contexto privado, preferências, decisões, repertório e evolução do usuário.
+- **Daily**: trabalho cotidiano e propostas de atualização do Workspace.
+- **Core Maintenance**: manutenção do sistema. Somente a conversa designada e uma autorização explícita podem alterar o Core.
+- O nome do chat é uma convenção operacional, não uma barreira técnica de segurança.
+- Dashboards, integrações e automações poderão ser adicionados futuramente se solicitados e validados.
 
-Dados privados não migram para o Core automaticamente.
-
-## O que existe nesta versão
-
-Foundation v1 é operacional e portátil: princípios, contratos, workflows, templates, qualidade, memória, observabilidade e onboarding. Ela não afirma ter integrações, dashboards ou automações. Uma versão futura poderá incluí-los se o usuário solicitar e aprovar escopo e privacidade.
-
-## Documentos principais
-
-- [Manifesto](docs/MANIFESTO.md)
-- [Constituição](docs/CONSTITUTION.md)
-- [Arquitetura](docs/ARCHITECTURE.md)
-- [Papéis](docs/ROLES.md)
-- [Modos](docs/MODES.md)
-- [Protocolo operacional](docs/OPERATING-PROTOCOL.md)
-- [Memória e conhecimento](docs/MEMORY-AND-KNOWLEDGE.md)
-- [Qualidade](docs/QUALITY.md)
-- [Governança](docs/GOVERNANCE.md)
-
-## Licença
-
-MIT. O Workspace pessoal pode permanecer privado.
+Foundation operacional: v1.1.

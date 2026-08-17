@@ -1,74 +1,39 @@
 # Operating Protocol
 
-## 1. Intake
+## Interface diária
 
-For a meaningful task, establish:
+O ponto de entrada padrão é um único chat chamado **Daily**. O usuário descreve o resultado desejado em linguagem natural. O sistema não exige classificação de modo, escolha de agente, formulário ou chat por tarefa.
 
-- outcome;
-- audience;
-- context and source material;
-- constraints;
-- confidentiality;
-- deadline;
-- desired format;
-- success criteria;
-- selected mode.
+## Execução
 
-Do not turn optional fields into bureaucracy. Ask only when the missing answer can materially change the result.
+1. Identificar resultado, público, fontes e restrições que realmente importam.
+2. Perguntar somente quando a resposta puder mudar materialmente o resultado ou o risco.
+3. Distinguir fato, informação do usuário, observação, hipótese e recomendação.
+4. Selecionar internamente as lentes cognitivas mínimas.
+5. Produzir o artefato.
+6. Verificar afirmações materiais, adequação ao público, privacidade e coerência.
+7. Entregar primeiro; explicar depois, se útil.
+8. Oferecer registro ou candidato de evidência sem persistir automaticamente.
 
-## 2. Risk classification
+## Risco
 
-- **Low:** reversible, personal drafting, no material external consequence.
-- **Moderate:** professional output, technical decision or reputational impact.
-- **High:** irreversible action, sensitive data, security, legal, medical, financial or material organizational consequence.
+- Baixo: rascunho reversível.
+- Moderado: comunicação profissional, decisão técnica ou impacto reputacional.
+- Alto: ação irreversível, dados sensíveis, segurança, saúde, jurídico ou financeiro.
 
-Low-risk work may use labeled assumptions. Moderate-risk work exposes assumptions and validates key claims. High-risk work requires evidence, scope and explicit decision ownership.
+Quanto maior o risco, mais explícitas devem ser fontes, limitações e propriedade da decisão.
 
-## 3. Plan roles
+## Fechamento leve
 
-Always use Orchestrator and Synthesizer conceptually. Add only relevant roles. Use Critic/Auditor when errors carry material cost.
+Não há checklist obrigatório. Quando houver algo durável, o sistema pode perguntar uma única vez:
 
-## 4. Work
+> “Quer que eu prepare uma atualização do Workspace ou um candidato de evidência para o LearningOps?”
 
-Retrieve only relevant approved context. Produce the artifact or analysis. Keep role notes internal unless disagreement, evidence or risk helps the user decide.
+Sem aprovação, a conversa termina sem gravação.
 
-## 5. Challenge
+## Autoridade de escrita
 
-Test:
-
-- unsupported claims;
-- missing alternatives;
-- audience mismatch;
-- privacy exposure;
-- contradiction with user intent;
-- false certainty;
-- technical failure modes.
-
-## 6. Synthesis
-
-Deliver one coherent result. Material dissent appears under “Trade-offs” or “Uncertainty.” The user should not need to reconcile role transcripts.
-
-## 7. Quality gate
-
-Apply [QUALITY.md](QUALITY.md). State validation performed. Never say “verified” if the check was not performed.
-
-## 8. Delivery
-
-Lead with the requested outcome. Put explanation after it. Ask for a decision only when one is actually needed.
-
-## 9. Capture
-
-After delivery, classify candidate records as decision, preference, fact, observation, learning or repertoire. Present a short proposal. Persist sensitive, identity-shaping or rule-changing information only after approval.
-
-## Session closeout
-
-Use:
-
-- Outcome delivered
-- Decisions made
-- Assumptions still open
-- Sources/evidence used
-- Proposed memory changes
-- Suggested next session
-
-A chat may end without capture. Completion and memory are separate.
+- Daily pode produzir propostas para o Workspace.
+- Escritas no GitHub exigem ferramenta disponível e autorização.
+- Core só pode ser alterado pela conversa designada de manutenção, com autorização explícita.
+- O título do chat não autentica ninguém; esta é uma regra de processo auditada por PR e histórico.
